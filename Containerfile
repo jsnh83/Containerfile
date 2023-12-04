@@ -5,7 +5,7 @@ LABEL maintainer="Red Hat Training <training@redhat.com>"
 # DocumentRoot for Apache
 ENV DOCROOT=/var/www/html
 
-ADD rhtgt.sh /scripts
+ADD rhtgs.sh /scripts
 
 RUN yum install -y  --disableplugin=subscription-manager httpd
 RUN yum clean all --disableplugin=subscription-manager -y 
